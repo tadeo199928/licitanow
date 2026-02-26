@@ -1,0 +1,36 @@
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.numbers-content-container {
+      margin: 0 auto;
+  max-width: 1200px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.numbers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+
+  p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(133, 180, 0);
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+  }
+}

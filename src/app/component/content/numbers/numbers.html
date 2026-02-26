@@ -1,0 +1,11 @@
+<div class="numbers-content-container">
+  <h2>A Nova Geração de Concursos Online</h2>
+  <div class="numbers-container">
+    @for (i of stats(); track $index) {
+      <div class="stats">
+        <p>{{ i.display }}</p>
+        <h3>{{ i.label }}</h3>
+      </div>
+    }
+  </div>
+</div>
