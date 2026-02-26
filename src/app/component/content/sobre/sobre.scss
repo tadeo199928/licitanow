@@ -1,0 +1,81 @@
+.sobre-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.sobre-container h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.sobre-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.sobre-text {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.sobre-button {
+  margin: 2rem auto 0;
+  text-align: center;
+  max-width: 350px;
+  padding: 1rem 2rem;
+  background-color: rgb(133, 180, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  &:hover {
+    background-color: rgb(113, 160, 0);
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.sobre-image-container {
+  margin-top: 3rem;
+}
+
+.sobre-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+  .sobre-content {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-image-container {
+    padding-left: 0;
+    padding-bottom: 1rem;
+  }
+
+  .sobre-button {
+    font-size: 1.1rem;
+  }
+}
