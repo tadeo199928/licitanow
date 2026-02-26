@@ -10,5 +10,5 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
 })
 export class Hero {
 
-    titleLetters: string[] = 'LicitaNow'.split('');
+    titleLetters: string[] = 'LICITANOW'.split('');
 }

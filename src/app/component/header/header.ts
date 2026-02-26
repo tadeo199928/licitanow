@@ -16,6 +16,7 @@ import {
   faBoxArchive,
   faHelmetSafety,
   faPeopleGroup,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -42,6 +43,7 @@ export class Header {
   faBoxArchive = faBoxArchive;
   faHelmetSafety = faHelmetSafety;
   faPeopleGroup = faPeopleGroup;
+  faBars = faBars;
 
   constructor(private elementRef: ElementRef) {}
 

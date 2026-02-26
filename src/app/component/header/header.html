@@ -7,7 +7,7 @@
     </div>
     <div class="elements" [class.menu-open]="menuOpen">
       <button class="responsive-menu" type="button" (click)="toggleMenu()">
-        <img src="/assets/menu.png" alt="Menu Icon" />
+        <fa-icon [icon]="faBars" ></fa-icon>
       </button>
       <ul>
         <li class="menu-item" [class.submenu-active]="submenuOpen['sobre']">

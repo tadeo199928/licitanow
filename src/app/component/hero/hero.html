@@ -8,7 +8,7 @@
       loop
       muted
     >
-      <source src="/assets/hero-sections.mp4" type="video/mp4" />
+      <source src="/assets/intro-video.mp4" type="video/mp4" />
     </video>
 
     <div class="hero-content">
@@ -17,16 +17,7 @@
           <span class="letter" [style.animation-delay]="$index * 0.1 + 's'">{{ letter }}</span>
         }
       </h1>
-      <div class="hero-rotating-text">
-        <ngx-typed-js
-          [strings]="['Innovation', 'Premium', 'Online']"
-          [typeSpeed]="100"
-          [backSpeed]="80"
-          [loop]="true"
-        >
-          <span class="typing"></span>
-        </ngx-typed-js>
-      </div>
+      <h2 class="hero-subtitle">A Nova Geração de Concursos Online</h2>
     </div>
   </section>
 </div>
