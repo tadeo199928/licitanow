@@ -7,34 +7,60 @@
     </div>
     <div class="elements" [class.menu-open]="menuOpen">
       <button class="responsive-menu" type="button" (click)="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+        <img src="/assets/menu.png" alt="Menu Icon" />
       </button>
       <ul>
-        <li class="menu-item">
-          <a href=""> Sobre </a>
-          <ul class="submenu">
-            <li><a href="/">Sobre Nos</a></li>
-            <li><a href="/">Creditos</a></li>
-            <li><a href="/">Preços</a></li>
-            <li><a href="/">Eventos</a></li>
+        <li class="menu-item" [class.submenu-active]="submenuOpen['sobre']">
+          <a (click)="toggleSubmenu('sobre', $event)">
+            Sobre <fa-icon [icon]="faInfo"></fa-icon> <fa-icon [icon]="faAngleDown"></fa-icon>
+          </a>
+          <ul class="submenu" [style.display]="submenuOpen['sobre'] ? 'flex' : 'none'">
+            <li>
+              <a href="/"> <fa-icon [icon]="faUsers"></fa-icon> Sobre Nos </a>
+            </li>
+            <li>
+              <a href="/"><fa-icon [icon]="faMoneyBill1"></fa-icon>Creditos</a>
+            </li>
+            <li>
+              <a href="/"><fa-icon [icon]="faMoneyCheckDollar"></fa-icon> Preços </a>
+            </li>
+            <li>
+              <a href="/"> <fa-icon [icon]="faCalendar"></fa-icon> Eventos </a>
+            </li>
           </ul>
         </li>
-        <li><a href="/">Como Funciona</a></li>
-        <li class="menu-item">
-          <a href=""> Soluções </a>
-
-          <ul class="submenu">
-            <li><a href="/">Concursos</a></li>
-            <li><a href="/">Serviços</a></li>
-            <li><a href="/">Arquivos</a></li>
-            <li><a href="/">Intervenções</a></li>
-            <li><a href="/">Colaborações</a></li>
+        <li>
+          <a href="/">Como Funciona <fa-icon [icon]="faQuestion"></fa-icon></a>
+        </li>
+        <li class="menu-item" [class.submenu-active]="submenuOpen['solucoes']">
+          <a (click)="toggleSubmenu('solucoes', $event)">
+            Soluções <fa-icon [icon]="faMagnifyingGlass"></fa-icon
+            ><fa-icon [icon]="faAngleDown"></fa-icon>
+          </a>
+          <ul class="submenu" [style.display]="submenuOpen['solucoes'] ? 'flex' : 'none'">
+            <li>
+              <a href="/"><fa-icon [icon]="faGavel"></fa-icon> Concursos </a>
+            </li>
+            <li>
+              <a href="/"><fa-icon [icon]="faRectangleList"></fa-icon> Serviços </a>
+            </li>
+            <li>
+              <a href="/"><fa-icon [icon]="faBoxArchive"></fa-icon> Arquivos </a>
+            </li>
+            <li>
+              <a href="/"><fa-icon [icon]="faHelmetSafety"></fa-icon> Intervenções </a>
+            </li>
+            <li>
+              <a href="/"><fa-icon [icon]="faPeopleGroup"></fa-icon> Colaborações </a>
+            </li>
           </ul>
         </li>
-        <li><a href="/">Suporte</a></li>
-        <li><a href="/">Entrar</a></li>
+        <li>
+          <a href="/">Suporte <fa-icon [icon]="faHandshakeAngle"></fa-icon></a>
+        </li>
+        <li class="loginButton">
+          <a href="/">Entrar <fa-icon [icon]="faUser"></fa-icon></a>
+        </li>
       </ul>
     </div>
   </div>

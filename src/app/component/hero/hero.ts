@@ -1,9 +1,12 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-hero',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './hero.html',
-  styleUrl: './hero.scss',
+  styleUrl: './hero.scss'
 })
-export class Hero {}
+export class Hero {
+
+}

@@ -8,22 +8,27 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgba(51, 51, 51, 0.9);
+  background-color: rgba(44, 45, 42, 0.783);
   z-index: 1000;
 }
 
 .nav-container img {
   text-decoration: none;
-  width: 5rem;
-  height: 4rem;
+  width: 80px;
+  height: 50px;
+  padding-left: 2rem;
 }
 
 .elements a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
-  padding: 0.5rem;
+  padding: 0.7rem;
   transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+    outline: none;
 }
 
 .elements {
@@ -31,33 +36,51 @@
     display: flex;
     list-style: none;
     gap: 1rem;
+    cursor: pointer;
 
     li.menu-item {
       position: relative;
 
       &:hover .submenu {
-        display: flex; 
+        display: flex;
       }
 
       .submenu {
         display: none;
         position: absolute;
-        top: calc(100% + 5px); 
         flex-direction: column;
-        background: white;
-        border-radius: 4px;
+        color: white;
+        background-color: rgb(51, 51, 51);
+        border: 1px solid black;
+        margin-top: 0.5rem;
         min-width: 150px;
+        border-radius: 20px;
         z-index: 10;
+        padding: 2rem;
+        animation: slideDown 0.3s ease-out;
+
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          list-style: none;
+        }
 
         li {
+          border-radius: 20px;
+          background-color: rgb(133 180 0);
+          text-align: center;
+          align-items: center;
+          justify-content: center;
 
           a {
-            display: block;
+            display: flex;
             text-decoration: none;
-            color: inherit;
 
             &:hover {
-              background: #f5f5f5;
+              background-color: rgba(112, 112, 112, 0.9);
+              border-radius: 20px;
             }
           }
         }
@@ -66,9 +89,14 @@
   }
 }
 
+.loginButton {
+  background-color: rgb(133 180 0);
+  padding: 5px;
+  border-radius: 999px;
+}
+
 .responsive-menu {
   display: none;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 40px;
@@ -76,27 +104,26 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0;
-  gap: 5px;
+  outline: none;
 
-  span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
+  img {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
   }
 }
 
 @media (max-width: 900px) {
   .nav-container {
-        position: absolute;
+    position: absolute;
     flex-wrap: wrap;
   }
 
   .elements {
     order: 3;
     width: 100%;
+    padding-right: 2rem;
 
     ul {
       display: none;
@@ -104,13 +131,24 @@
       gap: 1rem;
       padding: 1rem;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.05);
+      background-color: rgba(26, 26, 26);
       border-radius: 4px;
-      animation: slideDown 0.3s ease-out;
+      animation: slideDown 0.6s ease-out;
 
-      li a {
+      li {
         font-size: 1rem;
       }
+    }
+  }
+
+  .submenu {
+    max-width: 250px;
+    padding: 1rem;
+    li {
+      max-width: 200px;
+    }
+    a {
+      padding: 0.2rem;
     }
   }
 
@@ -118,6 +156,14 @@
     ul {
       display: flex;
     }
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  .loginButton {
+    max-width: 150px;
   }
 
   .responsive-menu {
