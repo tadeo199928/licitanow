@@ -14,7 +14,11 @@
     <div class="hero-content">
       <h1 class="hero-title">
         @for (letter of titleLetters; track $index) {
-          <span class="letter" [style.animation-delay]="$index * 0.1 + 's'">{{ letter }}</span>
+          @if (letter === 'N' || letter === 'O' || letter === 'W') {
+            <span class="letter-special" [style.animation-delay]="$index * 0.1 + 's'">{{ letter }}</span>
+          } @else {
+            <span class="letter" [style.animation-delay]="$index * 0.1 + 's'">{{ letter }}</span>
+          }
         }
       </h1>
       <h2 class="hero-subtitle">A Nova Geração de Concursos Online</h2>

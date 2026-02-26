@@ -7,12 +7,14 @@
     </div>
     <div class="elements" [class.menu-open]="menuOpen">
       <button class="responsive-menu" type="button" (click)="toggleMenu()">
-        <fa-icon [icon]="faBars" ></fa-icon>
+        <fa-icon [icon]="faBars"></fa-icon>
       </button>
       <ul>
         <li class="menu-item" [class.submenu-active]="submenuOpen['sobre']">
           <a (click)="toggleSubmenu('sobre', $event)">
-            Sobre <fa-icon [icon]="faInfo"></fa-icon> <fa-icon [icon]="faAngleDown"></fa-icon>
+            Sobre <fa-icon [icon]="faInfo"></fa-icon
+            ><fa-icon class="arrowButton" [icon]="faAngleDown"></fa-icon>
+         
           </a>
           <ul class="submenu" [style.display]="submenuOpen['sobre'] ? 'flex' : 'none'">
             <li>
@@ -35,9 +37,9 @@
         <li class="menu-item" [class.submenu-active]="submenuOpen['solucoes']">
           <a (click)="toggleSubmenu('solucoes', $event)">
             Soluções <fa-icon [icon]="faMagnifyingGlass"></fa-icon
-            ><fa-icon [icon]="faAngleDown"></fa-icon>
+            ><fa-icon class="arrowButton" [icon]="faAngleDown"></fa-icon>
           </a>
-          <ul class="submenu" [style.display]="submenuOpen['solucoes'] ? 'flex' : 'none'">
+          <ul class="submenu solu" [style.display]="submenuOpen['solucoes'] ? 'flex' : 'none'">
             <li>
               <a href="/"><fa-icon [icon]="faGavel"></fa-icon> Concursos </a>
             </li>
@@ -59,7 +61,7 @@
           <a href="/">Suporte <fa-icon [icon]="faHandshakeAngle"></fa-icon></a>
         </li>
         <li class="loginButton">
-          <a href="/">Login  <fa-icon [icon]="faUser"></fa-icon></a>
+          <a href="/">Login <fa-icon [icon]="faUser"></fa-icon></a>
         </li>
       </ul>
     </div>

@@ -17,6 +17,7 @@ import {
   faHelmetSafety,
   faPeopleGroup,
   faBars,
+  faAngleUp
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -31,6 +32,7 @@ export class Header {
   faInfo = faClipboardQuestion;
   faQuestion = faPersonCircleQuestion;
   faAngleDown = faAngleDown;
+  faAngleUp = faAngleUp;
   faMagnifyingGlass = faMagnifyingGlass;
   faHandshakeAngle = faHandshakeAngle;
   faUser = faUser;
@@ -44,6 +46,7 @@ export class Header {
   faHelmetSafety = faHelmetSafety;
   faPeopleGroup = faPeopleGroup;
   faBars = faBars;
+
 
   constructor(private elementRef: ElementRef) {}
 

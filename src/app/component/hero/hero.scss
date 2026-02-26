@@ -37,7 +37,6 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,20 +50,27 @@
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
-  background-color: rgb(51, 51, 51);
+  background-color: rgba(51, 51, 51, 0.976);
   transform: skew(-6deg);
   padding: 3rem 4rem;
 
   .letter {
     animation: fadeInUp 0.2s ease-out forwards;
     opacity: 0;
+    color: #ffffff;
+  }
+
+  .letter-special {
+    animation: fadeInUp 0.2s ease-out forwards;
+    opacity: 0;
+    color: rgb(133, 180, 0);
   }
 }
 
 .hero-subtitle {
   font-size: 1.6rem;
   animation: fadeInUp 0.8s ease-out forwards;
-  background-color: rgb(133, 180, 0);
+  background-color: rgb(132, 180, 0);
   color: #ffffff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   padding: 2rem;
@@ -92,6 +98,5 @@
     font-size: 1rem;
     padding: 1.5rem;
     margin-top: -40px;
-
   }
 }
