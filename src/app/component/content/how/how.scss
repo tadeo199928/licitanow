@@ -1,8 +1,8 @@
 .how {
-  max-width: 1500px;
+  max-width: 1600px;
   border-bottom: 2px solid rgba(132, 180, 0, 0.238);
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ h2 {
 .hover-card {
   background: rgba(189, 255, 6, 0.066);
   border: 2px solid #83b30050;
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 2rem;
   transition: all 0.3s;
   cursor: pointer;
@@ -97,11 +97,11 @@ h2 {
 
 .hover-card h3 {
   margin-bottom: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .hover-card p {
   color: #5b616b;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .link {

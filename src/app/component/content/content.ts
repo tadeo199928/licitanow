@@ -3,10 +3,11 @@ import { Sobre } from './sobre/sobre';
 import { Numbers } from './numbers/numbers';
 import { Separators } from "./separators/separators";
 import { How } from './how/how';
+import { Works } from './works/works';
 
 @Component({
   selector: 'app-content',
-  imports: [Sobre, Numbers, Separators, How],
+  imports: [Sobre, Numbers, Separators, How, Works],
   templateUrl: './content.html',
   styleUrl: './content.scss',
 })
