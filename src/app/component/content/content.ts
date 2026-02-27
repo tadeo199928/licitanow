@@ -4,10 +4,12 @@ import { Numbers } from './numbers/numbers';
 import { Separators } from "./separators/separators";
 import { How } from './how/how';
 import { Works } from './works/works';
+import { Values } from './values/values';
+import { Separatorsv2 } from './sepatorsv2/separators';
 
 @Component({
   selector: 'app-content',
-  imports: [Sobre, Numbers, Separators, How, Works],
+  imports: [Sobre, Numbers, Separators, How, Works, Values, Separatorsv2],
   templateUrl: './content.html',
   styleUrl: './content.scss',
 })

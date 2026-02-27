@@ -1,0 +1,135 @@
+.values {
+  position: relative;
+  max-width: 1600px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 0.7rem;
+}
+.subtitle {
+  color: #5d6470;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+
+.content-left,
+.content-right {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.content-left {
+  justify-content: flex-start;
+  max-width: 800px;
+  margin-left: 200px;
+  margin-top: -40px;
+  text-align: right;
+}
+
+.content-left:first-child {
+  margin-top: 0;
+}
+
+.content-right {
+  justify-content: flex-end;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: 200px;
+  margin-top: -40px;
+  text-align: left;
+}
+
+.text-left,
+.text-right {
+  flex: 0 0 330px;
+  padding: 1rem;
+}
+
+.text-left h3,
+.text-right h3 {
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.text-left p,
+.text-right p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #5b616b;
+}
+
+.img-left,
+.img-right {
+  flex: 0 0 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-left img,
+.img-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.img-left:hover img,
+.img-right:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .content-left,
+  .content-right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+  }
+
+  .text-left,
+  .text-right {
+    flex: 1;
+    width: 100%;
+    order: 2;
+    text-align: center;
+  }
+
+  .img-left,
+  .img-right {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    order: 1;
+  }
+
+  .img-left img,
+  .img-right img {
+    transition: none;
+  }
+
+  .img-left:hover img,
+  .img-right:hover img {
+    transform: none;
+  }
+}
