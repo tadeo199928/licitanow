@@ -26,6 +26,7 @@ h2 {
   gap: 3rem;
   position: relative;
   z-index: 1;
+  
 }
 
 .content-left {
@@ -59,7 +60,7 @@ h2 {
 .text-right h3 {
   font-size: 1.7rem;
   margin-bottom: 0.8rem;
-  color: #1f2937;
+  color: #000000;
   font-weight: 700;
 }
 
@@ -103,7 +104,7 @@ h2 {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 2rem;
-    gap: 1.5rem;
+    padding: 1rem;
   }
 
   .text-left,
