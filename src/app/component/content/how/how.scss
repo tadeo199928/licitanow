@@ -1,0 +1,122 @@
+.how {
+  max-width: 1500px;
+  border-bottom: 2px solid rgba(132, 180, 0, 0.238);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 0.7rem;
+}
+.subtitle {
+  color: #5d6470;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hover-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.hover-card {
+  background: rgba(189, 255, 6, 0.066);
+  border: 2px solid #83b30050;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+
+}
+
+.hover-card:hover {
+  background: #f9f9f9;
+  border-color: #84b300;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.icon-large1 {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e88e533;
+  color: #1e88e5;
+  font-size: 4rem;
+  line-height: 1;
+}
+.icon-large2 {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff88002f;
+  color: #ff8a00;
+  font-size: 4rem;
+  line-height: 1;
+}
+.icon-large3 {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7b3ff21f;
+  color: #7b3ff2;
+  font-size: 4rem;
+  line-height: 1;
+}
+.icon-large4 {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(170, 210, 40, 0.178);
+  color: rgb(170, 210, 40);
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.hover-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.hover-card p {
+  color: #5b616b;
+  font-size: 1.1rem;
+}
+
+.link {
+  color: #84b300;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .hover-cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .subtitle {
+      padding: 1rem;
+  }
+}

@@ -19,9 +19,7 @@
 }
 
 @media (max-width: 900px) {
-  .strip-items,
-  .mini-cta-inner {
-    text-align: center;
-    font-size: 10px;
+  .strip {
+    display: none;
   }
 }

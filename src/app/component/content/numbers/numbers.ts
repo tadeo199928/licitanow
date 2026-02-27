@@ -6,7 +6,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   selector: 'app-numbers',
   templateUrl: './numbers.html',
   styleUrl: './numbers.scss',
-    imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule],
 })
 export class Numbers implements AfterViewInit, OnDestroy {
   stats = signal([
@@ -21,13 +21,16 @@ export class Numbers implements AfterViewInit, OnDestroy {
   constructor(private host: ElementRef) {}
 
   ngAfterViewInit() {
-    this.observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !this.started) {
-        this.started = true;
-        this.animateCountUp(1200);
-        this.observer?.disconnect();
-      }
-    }, { threshold: 0.3 });
+    this.observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !this.started) {
+          this.started = true;
+          this.animateCountUp(1200);
+          this.observer?.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    );
 
     this.observer.observe(this.host.nativeElement);
   }
@@ -38,7 +41,7 @@ export class Numbers implements AfterViewInit, OnDestroy {
 
   private animateCountUp(duration: number) {
     const start = performance.now();
-    const target = this.stats().map(s => s.value);
+    const target = this.stats().map((s) => s.value);
 
     const tick = (now: number) => {
       const progress = Math.min((now - start) / duration, 1);

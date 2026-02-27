@@ -5,7 +5,10 @@ h2 {
 }
 .numbers-content-container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1600px;
+  border-bottom: 2px solid rgba(132, 180, 0, 0.238);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .numbers-container {
   display: grid;
@@ -43,15 +46,12 @@ h2 {
   }
 
   .stats {
+    p {
+      font-size: 3rem;
+    }
 
-  p {
-    font-size: 3rem;
-
+    h4 {
+      font-size: 1.2rem;
+    }
   }
-
-  h4 {
-    font-size: 1.2rem;
-
-  }
-}
 }
