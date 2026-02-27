@@ -4,33 +4,54 @@ h2 {
   margin-bottom: 3rem;
 }
 .numbers-content-container {
-      margin: 0 auto;
+  margin: 0 auto;
   max-width: 1200px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
 .numbers-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
+}
+
+.icon {
+  color: rgb(133, 180, 0);
 }
 
 .stats {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
+  border-radius: 0.5rem;
 
   p {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: bold;
     color: rgb(133, 180, 0);
+    margin-bottom: 0.5rem;
   }
 
-  h3 {
-    font-size: 1.2rem;
+  h4 {
+    font-size: 2rem;
     color: rgb(51, 51, 51);
   }
+}
+
+@media (max-width: 900px) {
+  .numbers-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .stats {
+
+  p {
+    font-size: 3rem;
+
+  }
+
+  h4 {
+    font-size: 1.2rem;
+
+  }
+}
 }

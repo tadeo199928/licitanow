@@ -1,0 +1,27 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.strip {
+  background: #d2d1d1;
+  border-top: 1px solid #e9edf3;
+  border-bottom: 1px solid #e9edf3;
+  padding: 1rem 0;
+}
+.strip-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+@media (max-width: 900px) {
+  .strip-items,
+  .mini-cta-inner {
+    text-align: center;
+    font-size: 10px;
+  }
+}

@@ -1,15 +1,18 @@
 import { Component, signal, AfterViewInit, ElementRef, OnDestroy } from '@angular/core';
+import { faClipboardCheck, faTrophy, faUserCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-numbers',
   templateUrl: './numbers.html',
   styleUrl: './numbers.scss',
+    imports: [FontAwesomeModule],
 })
 export class Numbers implements AfterViewInit, OnDestroy {
   stats = signal([
-    { label: 'Concursos finalizados', value: 500, display: 0 },
-    { label: 'Concursos activos', value: 80, display: 0 },
-    { label: 'Utilizadores', value: 1200, display: 0 },
+    { label: 'Concursos finalizados', Icon: faTrophy, value: 500, display: 0 },
+    { label: 'Concursos activos', Icon: faClipboardCheck, value: 80, display: 0 },
+    { label: 'Utilizadores', Icon: faUserCheck, value: 1200, display: 0 },
   ]);
 
   private observer?: IntersectionObserver;

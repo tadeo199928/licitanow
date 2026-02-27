@@ -53,6 +53,7 @@
   background-color: rgba(51, 51, 51, 0.976);
   transform: skew(-6deg);
   padding: 3rem 4rem;
+  animation: FadeDown 0.5s ease-out forwards;
 
   .letter {
     animation: fadeInUp 0.2s ease-out forwards;
@@ -81,6 +82,17 @@
   from {
     opacity: 0;
     transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes FadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
   }
   to {
     opacity: 1;

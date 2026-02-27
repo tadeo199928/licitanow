@@ -4,7 +4,7 @@
     @for (i of stats(); track $index) {
       <div class="stats">
         <p>{{ i.display }}</p>
-        <h3>{{ i.label }}</h3>
+        <h4>{{ i.label }} <fa-icon class="icon" [icon]="i.Icon"></fa-icon></h4>
       </div>
     }
   </div>
