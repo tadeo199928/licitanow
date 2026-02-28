@@ -1,0 +1,138 @@
+.button-container {
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  z-index: 0;
+  border-radius: 5px;
+}
+
+.button-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(133, 180, 0, 0.3);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 5px;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  min-height: 300px;
+  background: rgba(51, 51, 51, 0.974);
+  color: #fff;
+  padding: 2rem 2.25rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+
+  .title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+  }
+}
+
+.button-group {
+  position: absolute;
+  z-index: 3;
+  right: 5rem;
+  bottom: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.75rem 1.1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: rgb(133, 180, 0);
+  color: #fff;
+
+  &:hover {
+    background: rgb(113, 154, 0);
+  }
+}
+
+.btn-secondary {
+  background: #fff;
+  color: rgb(133, 180, 0);
+
+  &:hover {
+    background: rgb(236, 236, 236);
+  }
+}
+
+@media (max-width: 900px) {
+  .button-container {
+    min-height: 450px;
+    max-width: 380px;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .button-container::before {
+    border-radius: 0;
+  }
+
+  .background-image {
+    border-radius: 0;
+  }
+
+  .content-wrapper {
+    max-width: 300px;
+    min-height: 300px;
+    margin-top: 2rem;
+    background: rgba(51, 51, 51, 0.97);
+
+    .title {
+      font-size: 2.3rem;
+    }
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  .button-group {
+    right: 0rem;
+    bottom: 0rem;
+    margin-bottom: 40px;
+    font-size: 14px;
+    padding-right:31px;
+  }
+}

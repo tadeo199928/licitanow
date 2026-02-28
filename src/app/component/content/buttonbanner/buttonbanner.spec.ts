@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Separators } from './separators';
+import { Buttonbanner } from './buttonbanner';
 
-describe('Separators', () => {
-  let component: Separators;
-  let fixture: ComponentFixture<Separators>;
+describe('Buttonbanner', () => {
+  let component: Buttonbanner;
+  let fixture: ComponentFixture<Buttonbanner>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Separators]
+      imports: [Buttonbanner]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Separators);
+    fixture = TestBed.createComponent(Buttonbanner);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

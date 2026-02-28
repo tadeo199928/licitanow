@@ -5,7 +5,7 @@ import {
   faStopwatch,
   faComment,
   faArrowRight,
-  faPlus,
+  faHandPointUp,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -21,5 +21,5 @@ export class Works {
   faTrophy = faAward;
   faComment = faComment;
   faArrowRight = faArrowRight;
-  faPlus = faPlus;
+  faHandPointUp = faHandPointUp;
 }
