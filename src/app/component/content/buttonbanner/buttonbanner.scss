@@ -40,7 +40,7 @@
   max-width: 900px;
   min-height: 300px;
   background: rgba(51, 51, 51, 0.974);
-  color: #fff;
+  color: var(--color-white);
   padding: 2rem 2.25rem;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
@@ -54,7 +54,7 @@
     margin: 0;
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #f0f0f0;
+    color: var(--color-off-white);
   }
 }
 
@@ -80,17 +80,17 @@
 }
 
 .btn-primary {
-  background: rgb(133, 180, 0);
-  color: #fff;
+  background: var(--color-brand-green);
+  color: var(--color-white);
 
   &:hover {
-    background: rgb(113, 154, 0);
+    background: var(--color-brand-green-hover);
   }
 }
 
 .btn-secondary {
-  background: #fff;
-  color: rgb(133, 180, 0);
+  background: var(--color-white);
+  color: var(--color-brand-green);
 
   &:hover {
     background: rgb(236, 236, 236);

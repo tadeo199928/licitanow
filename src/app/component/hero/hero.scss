@@ -57,21 +57,21 @@
   .letter {
     animation: fadeInUp 0.2s ease-out forwards;
     opacity: 0;
-    color: #ffffff;
+    color: var(--color-white);
   }
 
   .letter-special {
     animation: fadeInUp 0.2s ease-out forwards;
     opacity: 0;
-    color: rgb(133, 180, 0);
+    color: var(--color-brand-green);
   }
 }
 
 .hero-subtitle {
   font-size: 1.6rem;
   animation: fadeInUp 0.8s ease-out forwards;
-  background-color: rgb(132, 180, 0);
-  color: #ffffff;
+  background-color: var(--color-brand-green);
+  color: var(--color-white);
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   padding: 2rem;
   margin-top: -100px;

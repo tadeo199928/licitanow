@@ -3,6 +3,22 @@ html, body {
     padding: 0;
 }
 
+:root {
+    --color-brand-dark: rgb(45, 42, 42);
+    --color-brand-dark-soft: rgb(51, 51, 51);
+    --color-brand-dark-muted: rgb(73, 72, 72);
+    --color-brand-green: rgb(133, 180, 0);
+    --color-brand-green-hover: rgb(113, 154, 0);
+    --color-white: #fff;
+    --color-off-white: #f0f0f0;
+    --color-page-bg: #f4f3f3;
+    --color-surface: #f9fafb;
+    --color-border-light: #e5e7eb;
+    --color-text-title: var(--color-brand-dark);
+    --color-text-muted: #5d6470;
+    --color-text-body: #5b616b;
+}
+
 * {
     outline: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

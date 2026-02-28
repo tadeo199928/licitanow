@@ -8,13 +8,13 @@
 .form-container h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #000;
+  color: var(--color-text-title);
   font-weight: 700;
 }
 
 .subtitle {
   font-size: 1rem;
-  color: #5d6470;
+  color: var(--color-text-muted);
   margin-bottom: 3rem;
   font-weight: 500;
 }
@@ -23,7 +23,7 @@
   display: flex;
   gap: 2rem;
   align-items: stretch;
-  background: #fff;
+  background: var(--color-white);
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -42,7 +42,7 @@
 
   h3 {
     font-size: 1.8rem;
-    color: #000;
+    color: var(--color-text-title);
     margin-bottom: 1rem;
     font-weight: 700;
     position: relative;
@@ -51,7 +51,7 @@
 
   p {
     font-size: 1.1rem;
-    color: #5b616b;
+    color: var(--color-text-body);
     margin-bottom: 2rem;
     line-height: 1.6;
     position: relative;
@@ -88,7 +88,7 @@
   text-align: left;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #000;
+  color: var(--color-text-title);
   margin-bottom: 0.3rem;
 }
 
@@ -96,7 +96,7 @@
 .contact-form select,
 .contact-form textarea {
   padding: 0.75rem 1rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--color-border-light);
   border-radius: 6px;
   font-size: 1rem;
   font-family: inherit;
@@ -129,12 +129,12 @@
 }
 
 .btn-primary {
-  background: rgb(133, 180, 0);
-  color: #fff;
+  background: var(--color-brand-green);
+  color: var(--color-white);
   margin-top: 0.5rem;
 
   &:hover {
-    background: rgb(113, 154, 0);
+    background: var(--color-brand-green-hover);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(133, 180, 0, 0.3);
   }
@@ -153,7 +153,7 @@
       font-size: 1.5rem;
     }
     p {
-      color: #000;
+      color: var(--color-text-title);
     }
   }
 

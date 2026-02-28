@@ -15,9 +15,10 @@
 h2 {
   font-size: 3rem;
   margin-bottom: 0.7rem;
+  color: var(--color-text-title);
 }
 .subtitle {
-  color: #5d6470;
+  color: var(--color-text-muted);
   margin-bottom: 3rem;
   font-size: 1rem;;
   font-weight: bold;
@@ -100,12 +101,12 @@ h2 {
   font-size: 1.7rem;
 }
 .hover-card p {
-  color: #5b616b;
+  color: var(--color-text-body);
   font-size: 1rem;;
 }
 
 .link {
-  color: #84b300;
+  color: var(--color-brand-green);
   font-weight: 600;
   font-size: 0.9rem;
 }
