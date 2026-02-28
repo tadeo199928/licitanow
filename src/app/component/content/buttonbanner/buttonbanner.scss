@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 450px;
-  max-width: 1200px;
+  max-width: 1600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +61,7 @@
 .button-group {
   position: absolute;
   z-index: 3;
-  right: 5rem;
+  right: 15rem;
   bottom: 1rem;
   display: flex;
   gap: 0.75rem;

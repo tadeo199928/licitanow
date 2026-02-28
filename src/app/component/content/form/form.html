@@ -1,0 +1,64 @@
+<section class="form-container">
+  <h2>Junte-se à nossa rede de colaboradores</h2>
+  <p class="subtitle">
+    Procuramos expandir negócios e encontrar profissionais que se identifiquem com a nossa missão
+  </p>
+  <div class="form-wrapper">
+    <div class="design">
+      <h3>Adesão ao Programa de Colaboradores</h3>
+      <p>
+        Preencha o formulário para se juntar à nossa rede de colaboradores e contribuir para o
+        crescimento do nosso negócio.
+      </p>
+      <img src="./assets/form.png" alt="Imagem de adesão" class="form-image" />
+    </div>
+    <div class="form-group">
+      <form class="contact-form">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required />
+        <label for="nickname">Apelido</label>
+        <input
+          type="text"
+          id="nickname"
+          name="nickname"
+          placeholder="Digite seu apelido"
+          required
+        />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required />
+        <label for="specialty">Especialidade</label>
+        <select id="specialty" name="specialty" required>
+          <option value="" disabled selected>Selecione sua especialidade</option>
+          <option value="arquitetura">Arquitetura</option>
+          <option value="engenharia">Engenharia civil</option>
+          <option value="construção">Empreiteiro</option>
+          <option value="electricista">Electricista</option>
+          <option value="canalizador">Canalizador</option>
+          <option value="carpinteiro">Carpinteiro</option>
+          <option value="fornecedor">Fornecedor de Materiais</option>
+          <option value="outros">Outros</option>
+        </select>
+        <label for="experience">Experiência</label>
+        <select id="experience" name="experience" required>
+          <option value="" disabled selected>Selecione os anos de experiência</option>
+          <option value="1-5">1-5 anos</option>
+          <option value="6-10">6-10 anos</option>
+          <option value="10+">Mais de 10 anos</option>
+        </select>
+        <label for="message">Mensagem</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Compartilhe detalhes que nos ajudem a conhecer melhor o seu background"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn btn-primary">
+          Enviar pedido de adesão<fa-icon [icon]="faPaperPlane"></fa-icon>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
