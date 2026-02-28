@@ -1,0 +1,245 @@
+footer {
+  background-color: rgb(45, 42, 42);
+  color: #fff;
+  padding: 1.5rem 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'logo social'
+    'middle middle'
+    'banner banner'
+    'copy copy';
+  row-gap: 1.25rem;
+}
+
+.footer-background {
+  grid-area: logo;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.social-media {
+  grid-area: social;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+
+  a {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 1.5rem;
+  }
+
+  a:hover {
+    border-color: rgb(133, 180, 0);
+    color: rgb(133, 180, 0);
+    background: rgba(133, 180, 0, 0.12);
+  }
+}
+
+.middle-content {
+  grid-area: middle;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+}
+
+.contact-info,
+.newsletter {
+  min-height: 190px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info {
+  margin-left: 50%;
+}
+
+.contact-info h3,
+.newsletter h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+}
+
+.contact-info span,
+.newsletter span {
+  color: rgb(133, 180, 0);
+}
+
+.contact-info p,
+.newsletter p {
+  margin: 0.3rem 0;
+  color: #e7e7e7;
+}
+
+.newsletter form {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter input {
+  flex: 1;
+  min-height: 42px;
+  border: 1px solid #6a6a6a;
+  border-radius: 6px;
+  padding: 0 0.8rem;
+  outline: none;
+}
+
+.newsletter button {
+  min-width: 44px;
+  border: none;
+  border-radius: 6px;
+  background: rgb(133, 180, 0);
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-img-banner {
+  grid-area: banner;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 1rem;
+
+  img {
+    width: auto;
+    height: 90px;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+
+.copyright {
+  grid-area: copy;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.25rem;
+}
+
+.copyright p {
+  margin: 0;
+  color: #d8d8d8;
+  font-size: 0.9rem;
+}
+
+.legal-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  a {
+    text-decoration: none;
+    border: 1px solid rgb(133, 180, 0);
+    color: rgb(133, 180, 0);
+    padding: 0.45rem 0.75rem;
+    border-radius: 5px;
+    font-size: 0.82rem;
+    transition: all 0.2s ease;
+  }
+
+  a:hover {
+    background: rgb(133, 180, 0);
+    color: #fff;
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    padding: 1.2rem 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'logo'
+      'social'
+      'middle'
+      'banner'
+      'copy';
+    row-gap: 1rem;
+  }
+
+  .footer-background {
+    width: 130px;
+    margin: 0 auto;
+  }
+
+  .social-media {
+    justify-content: center;
+    gap: 1rem;
+
+    a {
+      width: 42px;
+      height: 42px;
+      font-size: 1.2rem;
+    }
+  }
+
+  .middle-content {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+
+  .contact-info,
+  .newsletter {
+    max-width: 100%;
+    min-height: auto;
+    text-align: center;
+    align-items: center;
+    padding: 0 0.25rem;
+  }
+
+  .contact-info {
+    margin-left: 0;
+  }
+
+  .contact-info p,
+  .newsletter p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .newsletter form {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .footer-img-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 80px;
+    object-fit: contain;
+  }
+
+  .copyright {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .legal-links {
+    justify-content: center;
+    gap: 0.4rem;
+  }
+}
