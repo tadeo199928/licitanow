@@ -96,6 +96,38 @@ h2 {
   transform: scale(1.05);
 }
 
+@media (max-width: 1200px) {
+  .content-left,
+  .content-right {
+    gap: 2rem;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 3rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+
+  .text-left,
+  .text-right {
+    flex: 1;
+    width: 100%;
+    order: 2;
+    text-align: center;
+  }
+
+  .img-left,
+  .img-right {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    order: 1;
+    box-shadow: none;
+  }
+}
+
 @media (max-width: 900px) {
   .content-left,
   .content-right {
@@ -110,7 +142,6 @@ h2 {
     padding-bottom: 9px;
     padding-left: 1.1rem;
     padding-right: 1.1rem;
-    border-top: 1px solid rgba(45, 42, 42, 0.264);
   }
 
   .text-left,
