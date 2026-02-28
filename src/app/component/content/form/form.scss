@@ -147,12 +147,12 @@
   }
 
   .design {
-    min-height: 300px;
+    min-height: 400px;
 
     h3 {
       font-size: 1.5rem;
     }
-    p{
+    p {
       color: #000;
     }
   }
@@ -160,6 +160,9 @@
   .form-image {
     margin-top: 2.4rem;
     opacity: 0.2;
+    max-width: 500px;
+    max-height: 500px;
+
   }
 
   .form-group {
